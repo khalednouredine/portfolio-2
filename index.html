@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaled Noureddine — Web Developer</title>
+
+  <!-- favicon (optionnel) -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- stylesheet (on ajoute style plus tard) -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!-- photo aléatoire, remplace par ta photo -->
+          <img src="assets/images/profil.png" alt="Photo de Khaled Noureddine" width="120">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Khaled Noureddine">Khaled Nouredine</h1>
+          <p class="title">Web Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="false">
+          <span>Voir mes contacts</span>
+          <span aria-hidden="true">▾</span>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more" hidden>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box" aria-hidden="true">📞</div>
+            <div class="contact-info">
+              <p class="contact-title">Téléphone</p>
+              <a href="tel:+2120604464016" class="contact-link">+212 0604464016</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box" aria-hidden="true">📍</div>
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+              <address>Casablanca, Maroc</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator" aria-hidden="true"></div>
+
+
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list" role="tablist">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+        <header><h2 class="article-title">À propos</h2></header>
+
+        <section class="about-text">
+        <p>
+          Je suis <strong>Khaled Nouredine</strong>, développeur web full stack basé à Casablanca. Je travaille aussi bien sur la partie front-end que back-end et j’utilise des technologies comme React, Laravel et Flutter pour créer des solutions modernes et performantes.
+        </p>
+
+        <p>
+          J’ai suivi une formation en Développement Web Full Stack à l’ISTA de Dakhla, puis effectué des stages au MENPS (Dakhla) et chez CESAM (Rabat), où j’ai participé à la réalisation de sites web, d’API et d’applications en collaboration avec les équipes.
+        </p>
+      </section>
+
+
+        <section class="service">
+          <h3 class="service-title">Ce que je fais</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box" aria-hidden="true">💡</div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Intégration Front-end</h4>
+                <p class="service-item-text">HTML, CSS, JavaScript — intégration responsive et accessible.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" aria-hidden="true">⚙️</div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Back-end & APIs</h4>
+                <p class="service-item-text">Laravel, conception d'API, base de données MySQL.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" aria-hidden="true">📱</div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Applications mobiles</h4>
+                <p class="service-item-text">Participation à projets Flutter pour app mobile.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="testimonials">
+          <h3 class="testimonials-title">Témoignage</h3>
+
+          <div class="testimonials-list">
+            <div class="content-card">
+              <figure class="testimonials-avatar-box">
+                <img src="https://picsum.photos/seed/client1/80" alt="Client avatar" width="60">
+              </figure>
+              <h4 class="testimonials-item-title">Encadrant - CESAM</h4>
+              <div class="testimonials-text">
+                <p>J'ai collaboré avec Khaled sur le développement d'une API et il a montré rigueur et esprit d'équipe.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+        <header><h2 class="article-title">Parcours</h2></header>
+
+        <section class="timeline">
+          <div class="title-wrapper"><h3>Formations</h3></div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">DTS — Développement Web Full Stack</h4>
+              <span>2022 — 2024</span>
+              <p class="timeline-text">ISTA (OFPPT) – Dakhla. Projets en équipe, front & back.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper"><h3>Expériences</h3></div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Stagiaire Développeur Back-end — CESAM (Rabat)</h4>
+              <span>Juillet 2025 – Août 2025</span>
+              <p class="timeline-text">Développement et gestion d’APIs avec Laravel; collaboration front/back; sécurisation et optimisation.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Stagiaire Développeur Web — MENPS (Dakhla)</h4>
+              <span>Mai 2024 – Juin 2024</span>
+              <p class="timeline-text">Conception et développement d’un site web pour le MENPS; amélioration de l’interface et intégration.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="skills-title">Compétences</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper"><h5>HTML / CSS</h5><data value="90">90%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5>JavaScript</h5><data value="80">80%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5>React / Front</h5><data value="75">75%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:75%"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5>Laravel / Backend</h5><data value="70">70%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:70%"></div></div>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+        <header><h2 class="article-title">Projets</h2></header>
+
+        <section class="projects">
+          <ul class="project-list">
+
+            <!-- Projet 1 : MENPS (Dakhla) -->
+            <li class="project-item" data-filter-item data-category="web development">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <img src="assets/images/men.gov.png" alt="Site MENPS Dakhla" loading="lazy">
+                </figure>
+                <h3 class="project-title">Site MENPS — Dakhla</h3>
+                <p class="project-category">Institutionnel / Front-end (collaboration)</p>
+                <p class="project-desc">Participation à la conception et l’intégration : améliorations UX et intégration front-end (HTML/CSS/JS).</p>
+              </a>
+            </li>
+
+            <!-- Projet 2 : Application — CESAM (Rabat) -->
+            <li class="project-item" data-filter-item data-category="applications">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <img src="assets/images/cesam.png" alt="Application CESAM Rabat" loading="lazy">
+                </figure>
+                <h3 class="project-title">Application — CESAM</h3>
+                <p class="project-category">Application / Back-end & Front-end</p>
+                <p class="project-desc">Travail sur l'API (Laravel) et intégration côté front (collaboration Flutter/front-end) — optimisation et sécurisation.</p>
+              </a>
+            </li>
+
+            <!-- Projet 3 : Application Evena -->
+            <li class="project-item" data-filter-item data-category="web design">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <img src="assets/images/evena.png" alt="Application Evena" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Evena – Application d’événements</h3>
+                <p class="project-category">Mobile & Web App</p>
+                <p class="project-desc">
+  Application dédiée aux Comores permettant de découvrir les événements et activités du pays, avec réservation intégrée. Projet en cours de finalisation (Flutter + API Laravel).
+</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+        </section>
+      </article>
+
+
+    </div> <!-- end main-content -->
+
+  </main>
+
+  <!-- script (on ajoutera script.js personnalisé) -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
